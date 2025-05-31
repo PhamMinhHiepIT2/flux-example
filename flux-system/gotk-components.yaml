@@ -4,7 +4,7 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 1m0s
+  interval: 10s
   ref:
     branch: main
   url: https://github.com/PhamMinhHiepIT2/flux-example.git
@@ -15,7 +15,7 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 10s
   path: ./flux-system
   prune: true
   sourceRef:
