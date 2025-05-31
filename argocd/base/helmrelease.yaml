@@ -7,7 +7,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: ./charts/argo-cd
+      chart: argocd/charts/argo-cd
       version: "0.1.0"
       sourceRef:
         kind: GitRepository
