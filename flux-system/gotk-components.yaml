@@ -12,13 +12,13 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: example-app
+  name: argocd
   namespace: flux-system
 spec:
   interval: 10s
-  path: ../../apps/example-app/base
+  path: ./argocd
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  targetNamespace: example-app 
+  targetNamespace: argocd 
